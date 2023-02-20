@@ -1,0 +1,23 @@
+<div class="container">
+    <div>
+    <h4 class="text-center text-white bg-success">Araçlar</h4>
+    <table class="table">
+        <thead class="table-secondry" class="table-success">
+            <tr>
+                <th scope="col">Araç Adı</th>
+                <th scope="col">Marka</th>
+                <th scope="col">Renk </th>
+                <th scope="col">Günlük Fiyatı</th>
+            </tr>
+        </thead>
+        <tbody class="table-success">           
+            <tr *ngFor="let car of cars">
+                <td>{{car.carName}}</td>
+                <td>{{car.brandName}}</td> 
+                <td>{{car.colorName}}</td>  
+                <td>{{car.dailyPrice}}</td>                
+            </tr>
+        </tbody>
+    </table>
+    </div>
+  </div>

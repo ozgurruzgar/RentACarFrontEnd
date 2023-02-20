@@ -1,0 +1,19 @@
+<div class="container">
+  <div>
+  <h4 class="text-center text-white bg-primary">Markalar</h4>
+  <table class="table">
+      <thead class="table-secondry" class="table-primary">
+          <tr>
+              <th>Id</th>
+              <th>Marka Ad</th>
+          </tr>
+      </thead>
+      <tbody class="table-primary">           
+          <tr *ngFor="let brand of brands">
+              <td>{{brand.brandId}}</td>
+              <td>{{brand.brandName}}</td>               
+          </tr>
+      </tbody>
+  </table>
+  </div>
+</div>
